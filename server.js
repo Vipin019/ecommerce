@@ -7,10 +7,15 @@ import authRoutes from "./routes/authRoute.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import cors from "cors";
-import path from "path";
+import path from "path"; //supports up to es5 does not support in es6 || built in node
+import { fileURLToPath } from "url"; //built in node || use for es6
 
 //configure env
 dotenv.config();
+
+//es module fix
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 //databse config
 connectDB();
