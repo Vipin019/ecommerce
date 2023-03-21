@@ -25,10 +25,7 @@ const Header = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div
-          style={{ marginLeft: "5rem", marginRight: "5rem" }}
-          className="container-fluid"
-        >
+        <div style={{ backgroundColor: "#aaf1fd" }} className="container-fluid">
           <button
             className="navbar-toggler"
             type="button"
@@ -128,7 +125,7 @@ const Header = () => {
                   </li>
                 </>
               )}
-              <li className="nav-item">
+              <li style={{ padding: ".2rem" }} className="nav-item">
                 <NavLink to="/cart" className="nav-link">
                   <Badge count={cart?.length} showZero offset={[10, -5]}>
                     <AiOutlineShoppingCart />

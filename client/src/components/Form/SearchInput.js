@@ -32,7 +32,7 @@ const SearchInput = () => {
             borderRadius: "10rem",
             width: "25rem",
           }}
-          className="form-control me-2"
+          className="form-control me-2 search-input"
           type="search"
           placeholder="Search"
           aria-label="Search"

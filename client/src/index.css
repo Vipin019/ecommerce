@@ -167,3 +167,13 @@ body{
 .btn{
   border-radius: 1rem!important;
 }
+
+@media screen and (max-width: 991px){
+  .search-input{
+    width: 8rem!important;
+  }
+  .navbar-brand{
+    display: flex;
+    justify-content: center;
+  }
+}
