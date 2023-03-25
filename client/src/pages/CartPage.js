@@ -105,8 +105,11 @@ const CartPage = () => {
           <div className="row ">
             <div className="col-md-7  p-0 m-0">
               {cart?.map((p) => (
-                <div className="row card flex-row" key={p._id}>
-                  <div className="col-md-4">
+                <div
+                  className="cart-img-abd-details row card flex-row"
+                  key={p._id}
+                >
+                  <div className="cart-img col-md-4">
                     <img
                       src={`https://ecommerce-jjph.onrender.com/api/v1/product/product-photo/${p._id}`}
                       className="card-img-top"
@@ -115,7 +118,7 @@ const CartPage = () => {
                       height={"130px"}
                     />
                   </div>
-                  <div className="col-md-4">
+                  <div className="cart-details col-md-4">
                     <p>{p.name}</p>
                     <small>
                       Price : ${" "}

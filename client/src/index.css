@@ -176,4 +176,14 @@ body{
     display: flex;
     justify-content: center;
   }
+  .cart-img{
+    height: 3rem!important;
+    width: auto!important;
+    
+  }
+  .cart-img-abd-details{
+    display: flex!important;
+    justify-content: center!important;
+    text-align: center!important;
+  }
 }
